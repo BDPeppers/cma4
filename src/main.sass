@@ -1,0 +1,48 @@
+///imported components
+@import './components/_components'
+
+
+///Fonts
+$font: 'Titillium Web', sans-serif
+
+///Color
+$red: #f8234d
+$pink: #fa466b
+$orange: #F07F54
+$cma: darken($orange, 25%)
+$yellow: #f7b663
+$gray: darken( #a2a1a1, 50%)
+$dumbbell: #5B5B5B
+
+
+
+///Base Styles
+*
+    padding: 0
+    margin: 0
+
+html, body
+    font-size: 62.5%
+    scroll-behavior: smooth
+
+ul
+    list-style: none
+a
+    font-size: 2rem
+    text-decoration: none
+a:hover
+    text-decoration: none
+    color: whitesmoke
+
+div,a,h1,h2,h3,button,ul,li
+    letter-spacing: .25rem
+    color: whitesmoke
+    font-family: $font !important
+
+body::-webkit-scrollbar 
+  width: 1.5em
+body::-webkit-scrollbar-track 
+  box-shadow: inset 0 0 6px rgba($dumbbell, 0.8)
+body::-webkit-scrollbar-thumb 
+  background-color: $dumbbell
+  outline: 1px solid $red
