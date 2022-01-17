@@ -11,9 +11,8 @@ $pink: #fa466b
 $orange: #F07F54
 $cma: darken($orange, 25%)
 $yellow: #f7b663
-$gray: darken( #a2a1a1, 50%)
 $dumbbell: #5B5B5B
-
+$gray-background: #222
 
 
 ///Base Styles
@@ -24,6 +23,14 @@ $dumbbell: #5B5B5B
 html, body
     font-size: 62.5%
     scroll-behavior: smooth
+    background-color: $gray-background
+    overflow-x: hidden
+    
+    
+div#App
+    display: flex
+    flex-direction: column
+    align-items: center
 
 ul
     list-style: none
@@ -38,6 +45,7 @@ div,a,h1,h2,h3,button,ul,li
     letter-spacing: .25rem
     color: whitesmoke
     font-family: $font !important
+    font-weight: 300
 
 body::-webkit-scrollbar 
   width: 1.5em
