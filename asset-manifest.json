@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BDPeppers.github.io/static/css/main.1dc77f9a.css",
-    "main.js": "/BDPeppers.github.io/static/js/main.b8dd1194.js",
-    "static/js/787.e920a5ad.chunk.js": "/BDPeppers.github.io/static/js/787.e920a5ad.chunk.js",
-    "index.html": "/BDPeppers.github.io/index.html",
-    "main.1dc77f9a.css.map": "/BDPeppers.github.io/static/css/main.1dc77f9a.css.map",
-    "main.b8dd1194.js.map": "/BDPeppers.github.io/static/js/main.b8dd1194.js.map",
-    "787.e920a5ad.chunk.js.map": "/BDPeppers.github.io/static/js/787.e920a5ad.chunk.js.map"
+    "main.css": "/cma4/static/css/main.1dc77f9a.css",
+    "main.js": "/cma4/static/js/main.7e224f75.js",
+    "static/js/787.e920a5ad.chunk.js": "/cma4/static/js/787.e920a5ad.chunk.js",
+    "index.html": "/cma4/index.html",
+    "main.1dc77f9a.css.map": "/cma4/static/css/main.1dc77f9a.css.map",
+    "main.7e224f75.js.map": "/cma4/static/js/main.7e224f75.js.map",
+    "787.e920a5ad.chunk.js.map": "/cma4/static/js/787.e920a5ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1dc77f9a.css",
-    "static/js/main.b8dd1194.js"
+    "static/js/main.7e224f75.js"
   ]
 }
