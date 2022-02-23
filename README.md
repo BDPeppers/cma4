@@ -7,4 +7,7 @@
 [figma](https://www.figma.com/file/ysDtDkMsI1wpR8eF2xJqM1/CMA4-Desktop?node-id=105081%3A448)
 
 
-# Anticipated Launch late Feb/mid March
+# Tech Stack
+* Gatsby
+* React
+* TypeScript
