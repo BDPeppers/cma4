@@ -5,7 +5,6 @@ import CTAButton from '../btns/cta';
 
 
 function NavBar() {
-    
     return ( 
     <>
         <nav className="cma-navbar">
@@ -51,8 +50,10 @@ function NavBar() {
                     </li>
                 </ul>
                 <ul className='cma-links'>
-                    <CTAButton variant='contained' text='Home'/>
-                    <CTAButton variant='contained' text='About'/>
+                    <a href='#'>Home</a>
+                    <a href="#">About</a>
+                    {/* <CTAButton variant='contained' text='Home'/>
+                    <CTAButton variant='contained' text='About'/> */}
                 </ul>
             </div>            
         </nav>
