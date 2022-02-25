@@ -11,3 +11,4 @@
 * React
 * TypeScript
 * Sass
+* Next.js
