@@ -8,6 +8,6 @@
 
 
 # Tech Stack
-* Gatsby
 * React
 * TypeScript
+* Sass
