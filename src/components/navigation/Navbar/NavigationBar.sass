@@ -1,0 +1,45 @@
+@import './MobileNav/MobileNav'
+
+nav.navbar
+    width: 100vw
+    height: 10vh
+    display: flex
+    justify-content: center
+    div.nav-wrapper
+        max-width: 1440px
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center   
+        div.company-nav-header
+            height: 100%
+            display: flex
+            align-items: center
+        h1.company-nav-header-name
+            font-size: 4rem
+            display: flex
+            padding-left: 2rem
+
+div.mobile-nav-links
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+
+div.desktop-nav-links
+    display: none
+    min-width: 25rem
+    justify-content: space-around
+    align-items: center
+    height: 100%
+    a
+        font-size: 1.7rem
+        text-align: center
+
+@media screen and (min-width: 700px)//tablets  
+    div.mobile-nav-links
+        display: none  
+    div.desktop-nav-links
+        display: flex   
+
