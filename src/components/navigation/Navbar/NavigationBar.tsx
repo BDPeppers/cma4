@@ -20,7 +20,11 @@ export default function NavigationBar (props: IDesktopNavProps) {
                         {link}
                     </Link>
                 ))}
-                <Button className='yt-bg'>Join Now</Button>
+                <Button className='yt-bg nav-header-btn'>
+                    <Link href="https://secure.peakpayment.com/8821/join/?o_club_url=8821">
+                        Join Now
+                    </Link>
+                </Button>
             </div>
             <div className="mobile-nav-links">
                 <MobileNav navLinks={props.navLinks}/>

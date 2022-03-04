@@ -6,15 +6,30 @@ $awesome: #F8234D
 
 a,li,div,,p,h1,h2,h3,h4,h5
     color: $white
+    
 span
     color: $awesome
 
 button.blk-bg
-    background: $black
+    background-color: $black
     color: $white
+    a
+        color: $white
+button.blk-bg:hover, .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover
+    background-color: transparentize($black, .75%)
+    a
+        color: $black
+
 button.yt-bg
     background-color: $white
     color: $black
+    a
+        color: $black
+button.yt-bg:hover, .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover
+    background-color: transparentize($white, .75%)
+    a
+        color: $white
+
 
 nav
     background-color: $black
@@ -24,3 +39,5 @@ nav
 
 .grey-bg
     background-color: $grey
+
+
