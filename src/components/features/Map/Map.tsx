@@ -1,56 +1,47 @@
 import * as React from 'react';
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
-import Stack from '@mui/material/Stack';
-import CircularProgress from '@mui/material/CircularProgress';
-import ErrorIcon from '@mui/icons-material/Error';
+import GoogleMapReact from 'google-map-react';
+import RoomIcon from '@mui/icons-material/Room';
 
-export interface IMapProps {
+
+
+
+
+export interface ICmaMarkerProps {
+  lat: number,
+  lng: number,
 }
-var text: string;
 
-const AnyReactComponent = () => <div></div>;
-
-export default function Mapo (props: IMapProps) {
+function CmaMarker (props: ICmaMarkerProps) {
   return (
-    <div style={{ height: '20vh', width: '100vw' }}>
-
-    </div>
+    <RoomIcon style={{fontSize: '2.5rem', color: '#F8234D'}}/>
   );
 }
-var status: string;
 
-const render = (status) => {
-  switch (status) {
-    case Status.LOADING:
-      return (
-      <Stack sx={{ color: 'grey.500' }} spacing={2} direction="row">
-        <CircularProgress color="inherit" />
-      </Stack>
+type CmaMapProps = {
+  center: GoogleMapReact.Coords,
+  zoom: number
+}
+
+//Gym coordinates
+export const defaultMapProps = ({center: {lat: 32.611931, lng: -83.678253}, zoom: 13})
+
+export default class CmaMap extends React.Component<CmaMapProps> {
+  public render() {
+    return (
+      <div style={{ height: '30rem', width: '100vw' }}>
+        <GoogleMapReact
+          bootstrapURLKeys={({key:'AIzaSyCsp9_jlm4odj6ub2wxf7iS3RhrDM2pVbM'})}
+          defaultCenter={defaultMapProps.center}
+          defaultZoom={defaultMapProps.zoom}
+          draggable={false}
+        >
+          <CmaMarker 
+            lat={32.611931}
+            lng={-83.678253}
+          />
+        </GoogleMapReact>
+      </div>
     );
-    case Status.FAILURE:
-      return <ErrorIcon />;
-    // case Status.SUCCESS:
-    //   return (function MyMapComponent({
-    //     center,
-    //     zoom,
-    //   }: {
-    //     center: google.maps.LatLngLiteral;
-    //     zoom: number;
-    //   }) {
-    //     const ref = useRef();
-      
-    //     useEffect(() => {
-    //       new window.google.maps.Map(ref.current, {
-    //         center,
-    //         zoom,
-    //       });
-    //     });
-      
-    //     return <div ref={ref} id="map" />;
-    //   });
-    default:
-      return <ErrorIcon />;
   }
-};
+}
 
-const Map = () => <Wrapper apiKey={"AIzaSyCsp9_jlm4odj6ub2wxf7iS3RhrDM2pVbM"} render={render} />;
