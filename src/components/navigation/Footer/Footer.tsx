@@ -54,10 +54,7 @@ export default function Footer () {
             <h1 className='footer-sub-header'>The Dungeon</h1>
             <h3>198 S Houston Lake Rd Suite E</h3>
           </div>
-          <div className="footer-social long-footer-box">
-            <div className="small-social-box">
-              <h1  className='footer-header'>Connect</h1>
-            </div>          
+          <div className="footer-social long-footer-box">         
             <div className="social-box">
               <YouTubeIcon className='social-icon'/>
               <h3>
