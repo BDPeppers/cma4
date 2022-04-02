@@ -6,6 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import Link from 'next/link';
 
 export interface IMobileNavProps{
   navLinks: Array<string>
@@ -42,7 +43,9 @@ export default function MobileNav(props: IMobileNavProps) {
       <List>
         {props.navLinks?.map((link) => (
           <ListItem button key={link}>
-            <ListItemText primary={link} />
+            <Link href={`/${link}`}>
+              <ListItemText primary={link} />
+            </Link>
           </ListItem>
         ))}
       </List>

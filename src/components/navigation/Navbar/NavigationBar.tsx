@@ -16,7 +16,7 @@ export default function NavigationBar (props: IDesktopNavProps) {
             </div>
             <div className='desktop-nav-links'>
                 {props.navLinks?.map((link) => (
-                    <Link key={link} href="#">
+                    <Link key={link} href={`/${link}`}>
                         {link}
                     </Link>
                 ))}
