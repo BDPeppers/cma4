@@ -23,6 +23,9 @@ const Home: NextPage = () => {
       </Head>
       <HomeLanding/>
       <Banner/>
+      <section className='section-wrapper'>
+        <h1>Group Fitness Schedule</h1>
+      </section>
     </>
       
 
