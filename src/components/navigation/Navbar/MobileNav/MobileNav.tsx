@@ -56,7 +56,7 @@ export default function MobileNav(props: IMobileNavProps) {
     <div className='mobile-nav'>
       {(['right'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button className='mobile-menu-btn blk-bg' onClick={toggleDrawer(anchor, true)}><MenuRoundedIcon/></Button>
+          <Button className='mobile-menu-btn blk-bg' aria-label='Menu Button' onClick={toggleDrawer(anchor, true)}><MenuRoundedIcon/></Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

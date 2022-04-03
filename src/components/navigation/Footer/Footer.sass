@@ -15,37 +15,52 @@ div.long-footer-box
     flex-basis: 100%
     text-align: center
     padding: 2rem 0
-    h3.footer-tagline
-        // margin-bottom: 2rem
-        padding: 2rem
-
-
-div.footer-social
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
+    h1.footer-header
+        font-size: 2rem
+    h2.footer-tagline
+        padding: 2rem 3rem
+        font-size: 1.5rem
 
 div.footer-box
-    flex-basis: 48%
+    flex-basis: 80%
     padding: 1rem 0
     display: flex
     flex-direction: column
-    align-items: center
-    h1, h3
+    align-items: flex-start
+    h1, h2
         text-align: center
-    @media screen and (min-width: 800px)//tablets
+    @media screen and (min-width: 768px)//tablets
         flex-basis: 25%
+        align-items: center
 
 h1.footer-header
     font-size: 1.7rem
 h1.footer-sub-header
     font-size: 1.3rem
 
-h3, a
-    font-size: 1rem
+h2, a
+    font-size: 1.3rem
+
+div.footer-social
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    flex-basis: 80%
+    @media screen and (min-width: 768px)//tablets
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        flex-direction: row
+        flex-basis: unset
+
 
 div.social-box
     display: flex
-    padding: 1rem 3rem
+    padding: 1rem 
+    align-items: center
     .social-icon
         padding-right: .3rem
+        font-size: 2rem
+    @media screen and (min-width: 768px)//tablets
+        padding: 1rem 2.5rem
