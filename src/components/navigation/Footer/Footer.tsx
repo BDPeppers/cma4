@@ -15,14 +15,14 @@ export default function Footer () {
         <div className="cma-footer-wrapper">
           <div className="cma-footer long-footer-box">
             <h1 className='footer-header'><span>CMAFITNESS</span></h1>
-            <h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            <h3 className='footer-tagline'>
+            We provide a new experience in fitness! Fall in love with the lifestyle and have fun in the process.
             </h3>
             <hr />
           </div>
-          
           <div className="cma-staff-hours footer-box">
             <h1 className='footer-header'>Staff Hours</h1>
+            
             <h3>Mon - Thur:</h3>
             <h3>9:00AM - 1:00PM</h3>
             <h3>4:00PM - 8:00PM</h3>
@@ -30,7 +30,7 @@ export default function Footer () {
             <h3>9:00AM - 1:00PM</h3>
             <h3>Sun:</h3>
             <h3>Closed</h3>
-            
+            <h3>24/7 key fob access</h3> 
           </div>
           <div className="cma-staff-hours footer-box">
           <h1 className='footer-header'><span>CMA</span> Kidz Care Hours</h1>
@@ -41,12 +41,14 @@ export default function Footer () {
             <h3>9:00AM - 1:00PM</h3>
             <h3>Sun:</h3>
             <h3>Closed</h3>
-            <h3>24/7 key fob access</h3>
+            
           </div>
           <div className="cma-contact footer-box">
             <h1 className='footer-header'>Contact</h1>
-            <h3>Phone: 478-333-1376</h3>
-            <h3>Email: info@cmafitness.fit</h3>
+            <h3>Phone:</h3>
+            <h3>478-333-1376</h3>
+            <h3>Email:</h3>
+            <h3>info@cmafitness.fit</h3>
           </div>
           <div className="footer-box location">
             <h1 className='footer-header'><span>CMA</span>Fitness</h1>
