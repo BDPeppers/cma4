@@ -1,15 +1,35 @@
 import * as dateFns from "date-fns";
 import * as React from "react";
+import axios from "axios";
 
 const CALENDAR_ID = "hvjsr15398ntm7cgqq6vp5hg5s@group.calendar.google.com";
 const API_KEY = "AIzaSyDIrLYRk8P6upEoBmoF6BG3PGKAi1pDdqo";
-let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
+const SCOPE = "https://www.googleapis.com/auth/calendar.events.readonly";
+const url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
 
 //get events - > event cards will display acording to selected date
 ///utlize the google calendar API and figure out how to return recurring events
-////make a more efficent API call instead of calling everything
+////make a more efficent API call instead of calling everything - call the past month and current month
+//read-only access to Events - https://www.googleapis.com/auth/calendar.events.readonly
 
-//will get an array of events that w
+// 1.Obtain OAuth 2.0 credentials from API Console
+
+// 2.Obtain an access token from the Google Autorization Server
+
+// 3. Examine scope of access - read-only access to Events
+
+export async function getEvents() {
+  const res = await axios
+    .get(url)
+    .then((res) => {
+      console.log(res.data.items);
+      return res.data.items;
+    })
+    .catch((error) => {
+      return false;
+    });
+  return false;
+}
 
 //render days of the month and handle highlighting
 //the selected date will b highligted
@@ -42,8 +62,8 @@ export default function renderDates(selectedDate: Date) {
               ? "selected"
               : ""
           }`}
-          key={dateFormat}
-          //   onClick={() => this.onDateClick(cloneDay)}
+          key={days.length}
+          // onClick={() => this.onDateClick(cloneDay)} selected date function
         >
           {formattedDate}
         </div>
@@ -51,7 +71,7 @@ export default function renderDates(selectedDate: Date) {
       day = dateFns.addDays(day, 1);
     }
     rows.push(
-      <div className="row" key={dateFormat}>
+      <div className="row" key={rows.length}>
         {days}
       </div>
     );

@@ -2,10 +2,10 @@ import * as React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
-// type slide = {
-//   quote: string;
-//   // img: png type
-// };
+type slide = {
+  quote: string;
+  img: string;
+};
 
 export interface ICarouselProps {
   slides: Array<string>; //array of images and quotes
