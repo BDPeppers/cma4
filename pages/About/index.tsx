@@ -1,9 +1,12 @@
-import * as React from 'react';
+import * as React from "react";
+import AboutLanding from "../../src/components/About/Landing/AboutLanding";
+import Services from "../../src/components/About/Services/Services";
 
-export default function About () {
+export default function About() {
   return (
     <div>
-      <h1>test</h1>
+      <AboutLanding />
+      <Services />
     </div>
   );
 }

@@ -1,21 +1,20 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactStrictMode: true,
-  redirects: async() => {
-    return[
+  redirects: async () => {
+    return [
       {
-        source: '/Home',
-        destination: '/',
-        permanent: true
-      }
-    ]
+        source: "/Home",
+        destination: "/",
+        permanent: true,
+      },
+    ];
   },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
-  }
-}
+  },
+};
 
-module.exports = nextConfig
-
-
+module.exports = nextConfig;

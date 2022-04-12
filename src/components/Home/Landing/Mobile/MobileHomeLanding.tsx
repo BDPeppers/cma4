@@ -15,7 +15,7 @@ export default function MobileHomeLanding() {
           <Link href="/About">Learn More</Link>
         </Button>
         <Button className="blk-bg">
-          <a href="#">Gym Updates</a>
+          <a href={"https://secure.peakpayment.com/8821/join"}>Memberships</a>
         </Button>
       </div>
     </section>

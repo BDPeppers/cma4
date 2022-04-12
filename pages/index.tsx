@@ -16,27 +16,13 @@ const testimonials = ["test 1", "test 2", "test 3"];
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>CMA Fitness - Warner Robins Gym and Fitness Near You</title>
-        <meta
-          name="description"
-          content="Warner Robins gym providing quality fitness to the Middle GA area.
-                  Offering bodybuilding competition prep, personal training, meal and training guides,
-                  group fitness classes, and even a gym daycare."
-        />
-        <link rel="icon" href="/cma.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <HomeLanding />
       <Banner />
       <section className="section-wrapper cma-calendar-sect">
-        <h1 className="cma-schedule-header">Group Fitness Schedule</h1>
+        <h1 className="cma-schedule-header header">Group Fitness Schedule</h1>
         <CmaCalendar />
       </section>
-      <section className="section-wrapper cma-testimonials">
+      <section className="section-wrapper cma-testimonials blk-bg">
         <Carousel slides={testimonials} />
       </section>
     </>

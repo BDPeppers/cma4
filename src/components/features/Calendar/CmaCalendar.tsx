@@ -1,16 +1,27 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import * as dateFns from "date-fns";
 import { getEvents } from "./CalendarHelper";
 import { CircularProgress } from "@mui/material";
+import getCalendarEvents from "../../../../pages/api/Google";
 
 export default function CmaCalendar() {
-  const [events, setEvent] = useState(getEvents());
-  const test = getEvents();
+  const [events, setEvents] = useState();
+  console.log(events);
   const [gymClass, setGymClass] = useState([]);
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [month, setMonth] = useState(dateFns.format(new Date(), "LLLL"));
   const weekdays = ["S", "M", "T", "W", "T", "F", "S"];
+
+  // useEffect(() => {
+  //   setEvents(
+  //     getEvents().then((res) => {
+  //       events = res;
+  //     })
+  //   );
+  // }, []);
+
+  console.log(events);
 
   function renderDates() {
     // returns month start date of current date
@@ -79,7 +90,7 @@ export default function CmaCalendar() {
       </div>
 
       <div className="cma-event-cards">
-        {/* {events ? <CircularProgress /> : <div></div>} */}
+        {events ? <CircularProgress /> : <div></div>}
       </div>
     </>
   );
