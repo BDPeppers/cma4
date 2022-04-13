@@ -2,7 +2,7 @@ import * as React from "react";
 import { ServiceCardData } from "./ServiceCard";
 import ServiceCard from "./ServiceCard";
 //imgages
-// import GroupFitness from '../../../../../public/imgs/GroupFitness.png'
+import GroupFitnessPic from "../../../../../public/imgs/GroupFitness.png";
 
 const cardList: Array<ServiceCardData> = [];
 
@@ -10,7 +10,7 @@ const GroupFitness = new ServiceCardData(
   "Group Fitness",
   `Our passionate instructors lead exhilarating fitness
 classes welcoming beginners and pros`,
-  ""
+  GroupFitnessPic
 );
 cardList.push(GroupFitness);
 

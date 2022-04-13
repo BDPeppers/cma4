@@ -16,6 +16,15 @@ const testimonials = ["test 1", "test 2", "test 3"];
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>CMA Fitness - Warner Robins Gym and Fitness Near You</title>
+        <meta
+          name="description"
+          content="Warner Robins gym providing quality fitness to the Middle GA area.
+                  Offering bodybuilding competition prep, personal training, meal and training guides,
+                  group fitness classes, and even a gym daycare."
+        />
+      </Head>
       <HomeLanding />
       <Banner />
       <section className="section-wrapper cma-calendar-sect">
