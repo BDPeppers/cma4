@@ -1,13 +1,13 @@
 import { Box, Button, FormControl, OutlinedInput } from "@mui/material";
 import React, { useState } from "react";
 
-export interface IMailingListProps {
-  postUrl: string;
-  U: string;
-  urlId: string;
-}
+// export interface IMailingListProps {
+//   postUrl: string;
+//   U: string;
+//   urlId: string;
+// }
 
-export default function MailingList(props: IMailingListProps) {
+export default function MailingList() {
   const [email, setEmail] = useState("");
 
   return (
