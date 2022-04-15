@@ -1,18 +1,18 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import Link from 'next/link';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import Link from "next/link";
 
-export interface IMobileNavProps{
-  navLinks: Array<string>
+export interface IMobileNavProps {
+  navLinks: Array<string>;
 }
 
-type Anchor = 'right';
+type Anchor = "right";
 
 export default function MobileNav(props: IMobileNavProps) {
   const [state, setState] = React.useState({
@@ -23,9 +23,9 @@ export default function MobileNav(props: IMobileNavProps) {
     (anchor: Anchor, open: boolean) =>
     (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
-        event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
       ) {
         return;
       }
@@ -53,10 +53,16 @@ export default function MobileNav(props: IMobileNavProps) {
   );
 
   return (
-    <div className='mobile-nav'>
-      {(['right'] as const).map((anchor) => (
+    <div className="mobile-nav">
+      {(["right"] as const).map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button className='mobile-menu-btn blk-bg' aria-label='Menu Button' onClick={toggleDrawer(anchor, true)}><MenuRoundedIcon/></Button>
+          <Button
+            className="mobile-menu-btn blk-bg"
+            aria-label="Menu Button"
+            onClick={toggleDrawer(anchor, true)}
+          >
+            <MenuRoundedIcon />
+          </Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

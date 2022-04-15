@@ -54,7 +54,7 @@ export default class Carousel extends React.Component {
         >
           {slideList.map((slide, x) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={x}>
                 <Image src={slide.before} alt="CMA Fitness Testimonials" />
                 {slide.after ? (
                   <Image src={slide.after} alt="CMA Fitness Testimonials" />
