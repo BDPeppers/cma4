@@ -81,9 +81,7 @@ export default function ServiceCardList() {
   return (
     <>
       {cardList.map((card, x) => {
-        console.log(card);
         return <ServiceCard data={card} key={x} />;
-        // <ServiceCard data={card} key={x} />;
       })}
     </>
   );

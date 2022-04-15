@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <CmaCalendar />
       </section>
       <section className="section-wrapper cma-testimonials blk-bg">
-        <Carousel slides={testimonials} />
+        <Carousel />
       </section>
     </>
   );

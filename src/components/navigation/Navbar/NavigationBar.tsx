@@ -13,7 +13,9 @@ export default function NavigationBar(props: IDesktopNavProps) {
       <div className="nav-wrapper">
         <div className="company-nav-header">
           <h1 className="company-nav-header-name">
-            <span className="header">CMAFITNESS</span>
+            <Link href={"/Home"}>
+              <span className="header">CMAFITNESS</span>
+            </Link>
           </h1>
         </div>
         <div className="desktop-nav-links">
