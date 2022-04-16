@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import * as React from "react";
 import Image from "next/image";
-import cma from "../../../../../public/imgs/cma.PNG";
+import cma from "../../../../../public/imgs/cma-mobile.png";
 import Link from "next/link";
 
 export default function MobileHomeLanding() {
