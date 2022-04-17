@@ -22,17 +22,18 @@ export default function ServiceCard(props: IServiceCardProps) {
   }
   return (
     <div className="cma-service-card">
-      <div className="service-img-box">
-        <Image src={props.data.img} alt={props.data.title} />
-      </div>
       <div className="service-header">
         <h1 className="header">
           {cma ? <span className="header">CMA </span> : null}
           {title}
         </h1>
       </div>
+      <div className="service-img-box">
+        <Image src={props.data.img} alt={props.data.title} />
+      </div>
+
       <div className="service-description">
-        <h3>{props.data.description}</h3>
+        <h2>{props.data.description}</h2>
       </div>
     </div>
   );

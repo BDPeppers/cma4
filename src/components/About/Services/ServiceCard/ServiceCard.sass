@@ -2,16 +2,26 @@ div.service-cards
     display: flex
     flex-wrap: wrap
     justify-content: space-around
+    padding-bottom: 5rem
+    max-width: 102.4rem
+    
     
 div.cma-service-card
-    flex-basis: 45%
-    height: 45rem
-    min-height: 5rem
+    flex-basis: 80%
+    height: 50rem
     display: flex
     flex-direction: column
-    align-items: center
     justify-content: center
-    margin: 2rem 0
+    margin: 4rem 0
+    border: solid #ffff .1rem
+    padding: 1rem
+    @media screen and (min-width: 500px)
+        flex-basis: 45%
+
+
+    @media screen and (min-width: 1000px)
+        flex-basis: 25%
+        height: 40rem
 
 div.service-img-box, div.service-header, div.service-description
     display: flex
@@ -19,25 +29,33 @@ div.service-img-box, div.service-header, div.service-description
     text-align: center
 
 div.service-img-box
-    height: 65%
-    // background-color: #333333
-    img
+   img
         height: 90% !important
-        width: 95% !important
+        width: 90% !important
         min-height: unset !important
         min-width: unset !important
         max-height: unset !important
         max-width: unset !important
 
+
 div.service-header, div.service-description
-    height: 10%
+    display: flex
+    justify-content: center
+    align-items: center
     h1
-        font-size: 1.5rem
+        font-size: 2.5rem
+        // padding: 1rem
 
 div.service-description
-    height: 25%
-    h3
-        font-size: 1.3rem
+    display: flex
+    justify-content: center
+    align-items: center
+    h2
+        font-size: 1.7rem
+        // margin: 2rem
 
+
+
+   
 
     

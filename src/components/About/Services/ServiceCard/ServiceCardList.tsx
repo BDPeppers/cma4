@@ -8,7 +8,7 @@ import BodyBuildingPic from "../../../../../public/imgs/BodyBuildingPic.png";
 import CMAKidzPic from "../../../../../public/imgs/CMAKidzCarePic.png";
 import FemaleFitnessPic from "../../../../../public/imgs/FemaleFitnessPic.png";
 
-import CoedGymPic from "../../../../../public/imgs/PersonalTrainingPic.png";
+import CoedGymPic from "../../../../../public/imgs/CoedGymPic.png";
 import AllTheTimePic from "../../../../../public/imgs/AllTheTimePic.png";
 import BestCustPic from "../../../../../public/imgs/BestCustPic.png";
 
@@ -32,7 +32,7 @@ cardList.push(PersonalTraining);
 
 const BodyBuilding = new ServiceCardData(
   "Bodybuilding Prep Coaching",
-  `We provide contest preparation coaching services and programs
+  `We provide contest prep coaching and programs
   for bikini, figure, women's physique, and men's physique competitions.`,
   BodyBuildingPic
 );
@@ -70,13 +70,12 @@ cardList.push(AllTheTime);
 
 const BestCust = new ServiceCardData(
   "Best Customer Service In Town",
-  `We strive to make sure that our gym, services, and staff provides the
+  `We strive to make sure to provide the
 best fitness experience in Warner Robins and the Middle GA area.`,
   BestCustPic
 );
 cardList.push(BestCust);
 
-console.log(cardList);
 export default function ServiceCardList() {
   return (
     <>

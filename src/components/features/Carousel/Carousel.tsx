@@ -55,11 +55,13 @@ export default class Carousel extends React.Component {
           {slideList.map((slide, x) => {
             return (
               <SwiperSlide key={x}>
-                <Image src={slide.before} alt="CMA Fitness Testimonials" />
-                {slide.after ? (
-                  <Image src={slide.after} alt="CMA Fitness Testimonials" />
-                ) : null}
-                {slide.quote}
+                <div className="swiper-slide-wrapper">
+                  <Image src={slide.before} alt="CMA Fitness Testimonials" />
+                  {/* {slide.after ? (
+                    <Image src={slide.after} alt="CMA Fitness Testimonials" />
+                  ) : null} */}
+                  <p>{slide.quote}</p>
+                </div>
               </SwiperSlide>
             );
           })}
