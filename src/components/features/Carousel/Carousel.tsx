@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 export class Testimonial {
-  constructor(public quote: string, public before: any, public after?: any) {}
+  constructor(public quote: string, public before: any) {}
 }
 
 const slideList: Array<Testimonial> = [];
@@ -32,8 +32,7 @@ Doctors told me it would be impossible to be where I am today and that I needed 
 Well, thanks to her I just competed in my 4th men’s physique competition and it’s only up from here. 
 She’s constantly teaching me how to improve as an athlete and in doing so has helped me improve in life. 
 Over 100 pounds of fat lost!!!! No surgery!!!! Just a great coach and some work. Love her to death and can’t wait to see what the future holds.`,
-  justinBefore,
-  justinAfter
+  justinBefore
 );
 slideList.push(T2);
 
@@ -57,9 +56,6 @@ export default class Carousel extends React.Component {
               <SwiperSlide key={x}>
                 <div className="swiper-slide-wrapper">
                   <Image src={slide.before} alt="CMA Fitness Testimonials" />
-                  {/* {slide.after ? (
-                    <Image src={slide.after} alt="CMA Fitness Testimonials" />
-                  ) : null} */}
                   <p>{slide.quote}</p>
                 </div>
               </SwiperSlide>

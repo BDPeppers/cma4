@@ -45,17 +45,21 @@ export default function CmaCalendar() {
         const cloneDay = day;
         days.push(
           <div
-            className={`cell ${
-              !dateFns.isSameMonth(day, monthStart)
-                ? "disabled"
-                : dateFns.isSameDay(day, selectedDate)
-                ? "selected"
-                : ""
-            }`}
+            className="cell"
             key={days.length}
             // onClick={() => this.onDateClick(cloneDay)} selected date function
           >
-            {formattedDate}
+            <h1
+              className={`cell ${
+                !dateFns.isSameMonth(day, monthStart)
+                  ? "disabled"
+                  : dateFns.isSameDay(day, selectedDate)
+                  ? "selected"
+                  : ""
+              }`}
+            >
+              {formattedDate}
+            </h1>
           </div>
         );
         day = dateFns.addDays(day, 1);
