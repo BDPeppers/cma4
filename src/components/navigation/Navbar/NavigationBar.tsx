@@ -20,9 +20,11 @@ export default function NavigationBar(props: IDesktopNavProps) {
         </div>
         <div className="desktop-nav-links">
           {props.navLinks?.map((link) => (
-            <Link key={link} href={`/${link}`} passHref>
-              {link}
-            </Link>
+            <Button className="blk-bg">
+              <Link key={link} href={`/${link}`} passHref>
+                {link}
+              </Link>
+            </Button>
           ))}
           <Button className="yt-bg nav-header-btn">
             <Link href="https://secure.peakpayment.com/8821/join/?o_club_url=8821">
