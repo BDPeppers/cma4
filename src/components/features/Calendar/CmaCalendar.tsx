@@ -1,13 +1,9 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import * as dateFns from "date-fns";
-import { Button, CircularProgress } from "@mui/material";
-import { QueryClient, QueryClientProvider, useQuery } from "react-query";
-import { el } from "date-fns/locale";
+import { CircularProgress } from "@mui/material";
 import moment from "moment";
 import { EventCardList } from "./EventCards/EventCardList";
-
-const queryClient = new QueryClient();
 
 const CALENDAR_ID = "hvjsr15398ntm7cgqq6vp5hg5s@group.calendar.google.com";
 const API_KEY = "AIzaSyDIrLYRk8P6upEoBmoF6BG3PGKAi1pDdqo";
