@@ -60,6 +60,7 @@ export default function MobileNav(props: IMobileNavProps) {
             className="mobile-menu-btn blk-bg"
             aria-label="Menu Button"
             onClick={toggleDrawer(anchor, true)}
+            style={{ fontSize: "2rem" }}
           >
             <MenuRoundedIcon />
           </Button>
