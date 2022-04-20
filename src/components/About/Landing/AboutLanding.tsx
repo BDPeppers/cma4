@@ -28,12 +28,16 @@ export default function AboutLanding() {
           and even a gym daycare.
         </h2>
         <div className="cma-landing-about-buttons">
-          <Link href="https://secure.peakpayment.com/8821/prospect">
-            <Button className="blk-bg">Guest Pass</Button>
-          </Link>
-          <Link href="https://secure.peakpayment.com/8821/join">
-            <Button className="blk-bg">Memberships</Button>
-          </Link>
+          <Button className="blk-bg">
+            <Link href="https://secure.peakpayment.com/8821/prospect" passHref>
+              Guest Pass
+            </Link>
+          </Button>
+          <Button className="blk-bg">
+            <Link href="https://secure.peakpayment.com/8821/join" passHref>
+              Memberships
+            </Link>
+          </Button>
         </div>
       </section>
     </>

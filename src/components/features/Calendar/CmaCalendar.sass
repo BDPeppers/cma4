@@ -1,4 +1,5 @@
 @import '../../../../styles/branding'
+@import './EventCards/EventCard'
     
     
 div.cma-calendar-box
@@ -22,7 +23,9 @@ div.calendar
         justify-content: center
         h1
             font-size: 2rem
+            color: #fffff !important
             margin: 1rem 0
+
     div.weekdays
         flex-basis: 100%
         display: flex
@@ -36,7 +39,7 @@ div.cell
     display: flex
     justify-content: center
     align-items: center
-    h1.selected
+    button.selected
         display: flex
         justify-content: center
         align-items: center
@@ -47,3 +50,8 @@ div.cell
         border-radius: 100%
 
 
+div.cma-event-cards
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    justify-content: space-around

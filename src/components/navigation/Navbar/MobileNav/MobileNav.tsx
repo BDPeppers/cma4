@@ -43,7 +43,7 @@ export default function MobileNav(props: IMobileNavProps) {
       <List>
         {props.navLinks?.map((link) => (
           <ListItem button key={link}>
-            <Link href={`/${link}`}>
+            <Link href={`/${link}`} passHref>
               <ListItemText primary={link} />
             </Link>
           </ListItem>

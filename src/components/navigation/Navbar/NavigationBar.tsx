@@ -13,14 +13,14 @@ export default function NavigationBar(props: IDesktopNavProps) {
       <div className="nav-wrapper">
         <div className="company-nav-header">
           <h1 className="company-nav-header-name">
-            <Link href={"/Home"}>
+            <Link href={"/Home"} passHref>
               <span className="header">CMAFITNESS</span>
             </Link>
           </h1>
         </div>
         <div className="desktop-nav-links">
           {props.navLinks?.map((link) => (
-            <Link key={link} href={`/${link}`}>
+            <Link key={link} href={`/${link}`} passHref>
               {link}
             </Link>
           ))}
