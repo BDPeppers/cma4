@@ -1,11 +1,23 @@
 @import '../../../../styles/branding'
 @import './EventCards/EventCard'
     
-    
+div.calendar-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 100%
+    max-width: 102.4rem
+    @media screen and (min-width: 800px)//tablets
+        flex-direction: row
+
 div.cma-calendar-box
     display: flex
-    width: 95%
+    width: 100%
     border-radius: .5rem
+    @media screen and (min-width: 800px)//tablets
+        width: 50%
+        margin: 1rem
 
 div.calendar
     display: flex
@@ -52,6 +64,9 @@ div.cell
 
 div.cma-event-cards
     display: flex
+    flex: 1 1
     flex-wrap: wrap
     width: 100%
     justify-content: space-around
+    @media screen and (min-width: 768px)//tablets
+        width: 95%

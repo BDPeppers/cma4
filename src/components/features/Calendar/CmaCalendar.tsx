@@ -112,28 +112,30 @@ export default function CmaCalendar() {
 
   return (
     <>
-      <div className="cma-calendar-box blk-bg">
-        <div className="calendar">
-          <div className="month">
-            <h1>{month}</h1>
+      <div className="calendar-wrapper">
+        <div className="cma-calendar-box blk-bg">
+          <div className="calendar">
+            <div className="month">
+              <h1>{month}</h1>
+            </div>
+            <div className="weekdays">
+              {weekdays.map((day, index) => (
+                <div className="weekday cell" key={index}>
+                  {day}
+                </div>
+              ))}
+            </div>
+            {renderDates()}
           </div>
-          <div className="weekdays">
-            {weekdays.map((day, index) => (
-              <div className="weekday cell" key={index}>
-                {day}
-              </div>
-            ))}
-          </div>
-          {renderDates()}
         </div>
-      </div>
 
-      <div className="cma-event-cards">
-        {isLoadingEvents && gymClass ? (
-          <CircularProgress />
-        ) : (
-          <EventCardList eventList={gymClass} />
-        )}
+        <div className="cma-event-cards">
+          {isLoadingEvents && gymClass ? (
+            <CircularProgress />
+          ) : (
+            <EventCardList eventList={gymClass} />
+          )}
+        </div>
       </div>
     </>
   );
