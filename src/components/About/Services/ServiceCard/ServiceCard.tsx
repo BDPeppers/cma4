@@ -9,6 +9,8 @@ export class ServiceCardData {
   ) {}
 }
 
+const classDescription = (classTitle) => {};
+
 export interface IServiceCardProps {
   data: ServiceCardData;
 }
