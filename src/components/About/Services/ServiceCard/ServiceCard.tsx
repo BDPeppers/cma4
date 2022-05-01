@@ -9,7 +9,16 @@ export class ServiceCardData {
   ) {}
 }
 
-const classDescription = (classTitle) => {};
+const keywords = ["Bootcamp", ""];
+// const classDescription = (classTitle) => {};
+
+// //rip and ride - 30min of Power Shred + 30min of Spin
+// //zumba/funk fusion - aerobic fitness/interval training through dance
+// //Yoga - guided practice to increase awareness and mindfulness of the breath and body
+// //Kickboxing - combo of martial arts and fast-paced cardio
+// //Total Body Circuit - ask
+// //Booty Blast - ask
+//Insanity Bootcamp
 
 export interface IServiceCardProps {
   data: ServiceCardData;
