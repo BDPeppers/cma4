@@ -17,14 +17,14 @@ const cardList: Array<ServiceCardData> = [];
 const GroupFitness = new ServiceCardData(
   "Group Fitness",
   `Our passionate instructors lead exhilarating fitness
-classes welcoming beginners and pros.`,
+classes welcoming to both beginners and pros.`,
   GroupFitnessPic
 );
 cardList.push(GroupFitness);
 
 const PersonalTraining = new ServiceCardData(
   "Personal Training",
-  `One-on-One sessions with certified personal trainers dedicated
+  `Try our one-on-one sessions with personal trainers dedicated
   to helping you reach your fitness goals.`,
   PersonalTrainingPic
 );
@@ -33,7 +33,7 @@ cardList.push(PersonalTraining);
 const BodyBuilding = new ServiceCardData(
   "Bodybuilding Prep Coaching",
   `We provide contest prep coaching and programs
-  for bikini, figure, women's physique, and men's physique competitions.`,
+  for women's physique and men's physique competitions.`,
   BodyBuildingPic
 );
 cardList.push(BodyBuilding);
@@ -70,7 +70,7 @@ cardList.push(AllTheTime);
 
 const BestCust = new ServiceCardData(
   "Best Customer Service In Town",
-  `We strive to make sure to provide the
+  `We strive to provide the
 best fitness experience in Warner Robins and the Middle GA area.`,
   BestCustPic
 );

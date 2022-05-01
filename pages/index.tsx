@@ -1,12 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import CmaCalendar from "../src/components/features/Calendar/CmaCalendar";
-import Calendar from "../src/components/features/Calendar/CmaCalendar";
 import Carousel from "../src/components/features/Carousel/Carousel";
 import Banner from "../src/components/Home/Banner/Banner";
 import HomeLanding from "../src/components/Home/Landing/HomeLanding";
-import styles from "../styles/Home.module.css";
 
 const testimonials = ["test 1", "test 2", "test 3"];
 

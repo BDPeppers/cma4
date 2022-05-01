@@ -24,8 +24,8 @@ export default function AboutLanding() {
           the best gym in Warner Robins to provide you with the most
           well-rounded fitness experience Middle GA has to offer. This a
           full-service gym offering quality bodybuilding competition prep,
-          personal training, meal and training guides, group fitness classes,
-          and even a gym daycare.
+          personal training, meal prep and training guides, group fitness
+          classes, and even a gym daycare.
         </h2>
         <div className="cma-landing-about-buttons">
           <Button className="blk-bg">

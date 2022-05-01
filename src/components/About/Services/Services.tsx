@@ -7,9 +7,8 @@ export default function Services() {
       <div className="cma-service-summary">
         <h1 className="cma-service-headline header">Gym Services</h1>
         <h3 className="cma-service-tagline">
-          <span>CMA</span>Fitness provides personal and group fitness training,
-          bodybuilding competition preparation coaching, and as well as meal and
-          training guides. We target men and women of all ages looking for help
+          <span>CMA</span>Fitness provides personal and group tailored training
+          sessions. We target men and women of all ages looking for help
           reaching their health and fitness goals.
         </h3>
       </div>
