@@ -16,6 +16,7 @@ const getclassDescription = (classTitle: string) => {
       return "Guided practice to increase awareness and mindfulness of the breath and body";
     case "Zumba":
     case "Funk Fusion":
+    case "Zumba Fitness":
       return "Aerobic fitness/interval training through dance";
     case "Kickboxing":
     case "Kickbox & Step":
