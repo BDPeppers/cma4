@@ -1,4 +1,5 @@
 @import './MobileNav/MobileNav'
+@import '../../../../styles/vars'
 
 nav.navbar
     width: 100vw
@@ -18,9 +19,13 @@ nav.navbar
             display: flex
             align-items: center
         h1.company-nav-header-name
-            font-size: 2rem
-            display: flex
-            padding-left: 2rem
+            a
+                font-size: 3.5rem
+                display: flex
+                padding-left: 2rem
+                color: $awesome
+                font-family: $black-ops !important
+
 
 div.mobile-nav-links
     display: flex
@@ -35,12 +40,13 @@ div.desktop-nav-links
     align-items: center
     height: 100%
     button
-        font-size: 1.7rem
+        font-size: 2rem
         display: flex
         flex: 1 1 33%
         justify-content: center
         height: 75%
         min-height: 5rem
+        max-height: 7.5rem
         margin: 0 .5rem
         a
             width: 100%

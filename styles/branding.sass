@@ -1,8 +1,5 @@
-//Color Scheme
-$white: #ffffff
-$black: #000000
-$grey: #333333
-$awesome: #CC1100
+@import '../src/components/components'
+@import './vars'    
 
 a,li,div,,p,h1,h2,h3,h4,h5,span
     color: $white
@@ -32,7 +29,7 @@ button.blk-bg:hover, .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover
         color: $white !important
 
 .header
-    font-family: 'Black Ops One' !important
+    font-family: $black-ops !important
 
 button.yt-bg
     background-color: $white
@@ -44,13 +41,56 @@ button.yt-bg:hover, .css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover
     a
         color: $white
 
-nav
-    background-color: $black
-
 .blk-bg
     background-color: $black
 
 .grey-bg
     background-color: $grey
 
+
+section.cma-landing-wrapper
+  height: 90vh
+  min-height: 40rem
+
+section.section-wrapper
+  width: 100vw
+  display: flex
+  justify-content: center
+
+
+///General Styles
+
+*
+    padding: 0
+    margin: 0
+    font-size: 62.5%
+    font-family: $hammersmith, sans-serif !important
+    letter-spacing: .15rem
+
+html, body
+    scroll-behavior: smooth
+    overflow-x: hidden
+    background-color: $grey
+
+a, button
+    text-decoration: none !important
+    text-transform: none !important
+
+button
+    border-radius: .5rem !important
+    border: none
+    width: 100%
+    height: 100%
+    
+
+
+
+//scroll bar styles
+body::-webkit-scrollbar 
+  width: 1em
+body::-webkit-scrollbar-track 
+  box-shadow: inset 0 0 .6rem rgba($grey, 95%)
+body::-webkit-scrollbar-thumb 
+  background-color: lighten($grey, 30%)
+  border-radius: 2rem
 

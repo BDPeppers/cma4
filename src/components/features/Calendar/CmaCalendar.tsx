@@ -23,21 +23,21 @@ export default function CmaCalendar() {
   const [month, setMonth] = useState(dateFns.format(new Date(), "LLLL"));
   const weekdays = ["S", "M", "T", "W", "T", "F", "S"];
 
-  const getEvents = () => {
-    const calEvents: any[] = [];
-    fetch(url)
-      .then((res) => {
-        return res.json();
-      })
-      .then((res) => {
-        setIsLoadingEvents(false);
-        res.items.map((item: any) => {
-          events.push(item);
-        });
-        setEvents(calEvents);
-        getDailyClasses();
-      });
-  };
+  // const getEvents = () => {
+  //   const calEvents: any[] = [];
+  //   fetch(url)
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((res) => {
+  //       setIsLoadingEvents(false);
+  //       res.items.map((item: any) => {
+  //         events.push(item);
+  //       });
+  //       setEvents(calEvents);
+  //       getDailyClasses();
+  //     });
+  // };
 
   const getDailyClasses = () => {
     const dailyClasses = events.filter(
@@ -53,8 +53,22 @@ export default function CmaCalendar() {
   };
 
   useEffect(() => {
-    getEvents();
+    const calEvents: any[] = [];
+    fetch(url)
+      .then((res) => {
+        return res.json();
+      })
+      .then((res) => {
+        setIsLoadingEvents(false);
+        res.items.map((item: any) => {
+          events.push(item);
+        });
+        setEvents(calEvents);
+        getDailyClasses();
+      });
   }, [selectedDate]);
+
+  console.log(events);
 
   function renderDates() {
     // returns month start date of current date

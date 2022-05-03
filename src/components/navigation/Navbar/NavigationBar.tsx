@@ -9,12 +9,13 @@ export interface IDesktopNavProps {
 
 export default function NavigationBar(props: IDesktopNavProps) {
   return (
-    <nav className="navbar">
+    <nav className="navbar blk-bg">
       <div className="nav-wrapper">
         <div className="company-nav-header">
-          <h1 className="company-nav-header-name">
+          <h1 className="company-nav-header-name header">
             <Link href={"/Home"} passHref>
-              <span className="header">CMAFITNESS</span>
+              {/* <span className="header">CMAFITNESS</span> */}
+              CMAFITNESS
             </Link>
           </h1>
         </div>
