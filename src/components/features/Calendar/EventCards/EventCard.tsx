@@ -53,9 +53,9 @@ export default function EventCard({
       <h1 className="event-title">{eventTitle}</h1>
       <h2 className="event-host">{eventHost}</h2>
       <div className="time-box">
-        <h2 className="event-time">{eventEnd}</h2>
-        &nbsp;&nbsp;&ndash;&nbsp;&nbsp;
         <h2 className="event-time">{eventStart}</h2>
+        &nbsp;&nbsp;&ndash;&nbsp;&nbsp;
+        <h2 className="event-time">{eventEnd}</h2>
       </div>
       {desc ? <h2 className="event-description">{desc}</h2> : null}
     </div>

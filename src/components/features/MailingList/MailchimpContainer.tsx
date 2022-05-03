@@ -13,6 +13,7 @@ export default function MailchimpContainer({
   U,
   postUrl,
 }: IMailchimpContainerProps) {
+  const SimpleForm = () => <MailchimpSubscribe url={postUrl} />;
   return (
     <div className="mc__form-container">
       <MailchimpSubscribe
