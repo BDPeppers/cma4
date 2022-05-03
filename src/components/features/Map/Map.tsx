@@ -2,6 +2,8 @@ import * as React from "react";
 import GoogleMapReact from "google-map-react";
 import RoomIcon from "@mui/icons-material/Room";
 
+const API_KEY = process.env.GOOGLE_MAP_API_KEY;
+
 export interface ICmaMarkerProps {
   lat: number;
   lng: number;

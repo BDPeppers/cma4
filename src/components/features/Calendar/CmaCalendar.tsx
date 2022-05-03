@@ -68,8 +68,6 @@ export default function CmaCalendar() {
       });
   }, [selectedDate]);
 
-  console.log(events);
-
   function renderDates() {
     // returns month start date of current date
     const monthStart = dateFns.startOfMonth(new Date());
