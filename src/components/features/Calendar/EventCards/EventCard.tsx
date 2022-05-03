@@ -13,7 +13,7 @@ const getclassDescription = (classTitle: string) => {
     case "Rip & Ride":
       return " 30 min of Power Shred + 30 min of Spin";
     case "Yoga Vibez":
-      return "guided practice to increase awareness and mindfulness of the breath and body";
+      return "Guided practice to increase awareness and mindfulness of the breath and body";
     case "Zumba":
     case "Funk Fusion":
       return "Aerobic fitness/interval training through dance";
@@ -27,7 +27,7 @@ const getclassDescription = (classTitle: string) => {
     case "Step Express":
       return "Cardio with an extra touch";
     case "Spin":
-      return "";
+      return "Total body, low impact cardio";
     case "HIIT & LIIT":
       return "Intensity, break, repeat";
     case "Total Body Circuit":
