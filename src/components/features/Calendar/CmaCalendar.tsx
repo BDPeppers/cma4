@@ -22,8 +22,10 @@ export default function CmaCalendar() {
   const [isLoadingEvents, setIsLoadingEvents] = useState(true);
   const [gymClass, setGymClass] = useState(dummydata);
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [month, setMonth] = useState(dateFns.format(new Date(), "LLLL"));
+
   const weekdays = ["S", "M", "T", "W", "T", "F", "S"];
+  const month = dateFns.format(new Date(), "LLLL");
+  console.log(selectedDate);
 
   // const getEvents = () => {
   //   const calEvents: any[] = [];
