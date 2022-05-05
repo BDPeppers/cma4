@@ -25,23 +25,6 @@ export default function CmaCalendar() {
 
   const weekdays = ["S", "M", "T", "W", "T", "F", "S"];
   const month = dateFns.format(new Date(), "LLLL");
-  console.log(selectedDate);
-
-  // const getEvents = () => {
-  //   const calEvents: any[] = [];
-  //   fetch(url)
-  //     .then((res) => {
-  //       return res.json();
-  //     })
-  //     .then((res) => {
-  //       setIsLoadingEvents(false);
-  //       res.items.map((item: any) => {
-  //         events.push(item);
-  //       });
-  //       setEvents(calEvents);
-  //       getDailyClasses();
-  //     });
-  // };
 
   const getDailyClasses = () => {
     const dailyClasses = events.filter(
