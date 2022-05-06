@@ -9,9 +9,7 @@ const CALENDAR_ID = "1s8osr31o7vbkh993j236pu128@group.calendar.google.com";
 const API_KEY = "AIzaSyDIrLYRk8P6upEoBmoF6BG3PGKAi1pDdqo";
 const SCOPE = "https://www.googleapis.com/auth/calendar.events.readonly";
 const url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`;
-// `https://www.googleapis.com/calendar/v3/calendars/1s8osr31o7vbkh993j236pu128@group.calendar.google.com/events?key=AIzaSyDIrLYRk8P6upEoBmoF6BG3PGKAi1pDdqo`;
 
-// ("https://www.googleapis.com/calendar/v3/calendars/hvjsr15398ntm7cgqq6vp5hg5s@group.calendar.google.com/events/");
 class calEvent {
   constructor(start: Date, end: Date, summary: string, description: string) {}
 }
