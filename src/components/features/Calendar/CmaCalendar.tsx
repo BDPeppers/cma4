@@ -38,11 +38,6 @@ export default function CmaCalendar() {
   };
 
   useEffect(() => {
-    const today = new Date();
-    setSelectedDate(today);
-  }, []);
-
-  useEffect(() => {
     const calEvents: any[] = [];
     fetch(url)
       .then((res) => {
@@ -128,7 +123,7 @@ export default function CmaCalendar() {
         </div>
 
         <div className="cma-event-cards">
-          {isLoadingEvents && gymClass ? (
+          {isLoadingEvents ? (
             <CircularProgress />
           ) : (
             <EventCardList eventList={gymClass} />

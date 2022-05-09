@@ -48,7 +48,6 @@ export default function EventCard({
   eventTitle,
 }: IEventCardProps) {
   const desc = getclassDescription(eventTitle.toString());
-  console.log(desc);
   return (
     <div className="event-card blk-bg">
       <h1 className="event-title">{eventTitle}</h1>
