@@ -38,6 +38,11 @@ export default function CmaCalendar() {
   };
 
   useEffect(() => {
+    const today = new Date();
+    setSelectedDate(today);
+  });
+
+  useEffect(() => {
     const calEvents: any[] = [];
     fetch(url)
       .then((res) => {
