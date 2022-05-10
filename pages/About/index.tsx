@@ -8,7 +8,7 @@ export default function About() {
     <div>
       <AboutLanding />
       <Services />
-      <MailingList />
+      {/* <MailingList /> */}
     </div>
   );
 }
