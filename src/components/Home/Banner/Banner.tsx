@@ -10,7 +10,7 @@ export default function Banner() {
           {/* &quot;Accept the challenge, stay motivated, achieve, set goals and a
           more healthier life overall.&quot; */}
           We're going to turn it up this summer with a little pain and a lotta
-          gain!! Join us 6/6-6/30 and we'll help you get CMA fit!
+          gain!! Join us 6/6-6/30 and we&apos;ll help you get CMA fit!
         </h2>
         <br />
         <br />
