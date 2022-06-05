@@ -17,7 +17,11 @@ export default function Banner() {
         <br />
         {/* <h2 className="cma-banner-txt-2">Summertime Boot Camp Sign Up</h2> */}
         <Button className="yt-bg banner-btn">
-          <Link href={"https://secure.peakpayment.com/8821/join"}>
+          <Link
+            href={
+              "https://www.eventbrite.com/e/summertime-boot-camp-tickets-355179711077?aff=ebdssbdestsearch"
+            }
+          >
             Summertime Boot Camp Sign Up
           </Link>
         </Button>
