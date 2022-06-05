@@ -1,7 +1,10 @@
 div.cma-banner-wrapper
     width: 100vw
-    height: 20vh
+    min-height: 20vh
     // margin: auto
+    display: flex
+    justify-content: center
+
 
 
 div.cma-banner
@@ -10,10 +13,17 @@ div.cma-banner
     align-items: center
     text-align: center
     height: 100%
+    width: 75%
     flex-direction: column
-    padding: 0 2rem
+    padding: 2rem
 
-h2.cma-banner-txt-1, h2.cma-banner-txt-2
+.banner-btn
+    min-width: 10rem
+    width: 65%
+    max-width: 30rem
+
+
+h2.cma-banner-txt-1, h2.cma-banner-txt-2, .banner-btn
     font-size: 1.5rem
     @media screen and (min-width: 768px)//tablets
         font-size: 2rem
