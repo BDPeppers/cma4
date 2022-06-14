@@ -5,11 +5,6 @@ import Carousel from "../src/components/features/Carousel/Carousel";
 import Banner from "../src/components/Home/Banner/Banner";
 import HomeLanding from "../src/components/Home/Landing/HomeLanding";
 
-const testimonials = ["test 1", "test 2", "test 3"];
-
-// NextPage = getInitialProps ~ enables SSR in a page and allows you to do initial data polpulation, it means sending the page
-// with the data already populated from the server ~ is async
-
 const Home: NextPage = () => {
   return (
     <>
