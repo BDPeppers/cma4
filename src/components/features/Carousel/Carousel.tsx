@@ -4,7 +4,7 @@ import { Pagination, Navigation } from "swiper";
 import Image from "next/image";
 import Debi from "../../../../public/imgs/Testimonials/Debi.png";
 import justinBefore from "../../../../public/imgs/Testimonials/justinBefore.png";
-import justinAfter from "../../../../public/imgs/Testimonials/justinAfter.png";
+import levelUp from "../../../../public/imgs/Testimonials/levelup.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -35,6 +35,15 @@ Over 100 pounds of fat lost!!!! No surgery!!!! Just a great coach and some work.
   justinBefore
 );
 slideList.push(T2);
+const T3 = new Testimonial(
+  `Dreams do come true! Health and physical fitness have always been important to me. 
+I lifted weights and ran track in high school, ran 5ks, and I've trained for Disney's half marathon. After baby #3, I was unable to get my health and fitness
+back on track despite my best efforts. That's when I decided to reach out to Chanda at CMA Fitness. I told her I was interested in competing
+in a body building competition as a way to get my physical fitness back on track. My goal was to compete in a show before I turned 40. Fast forward 2 years, and not only
+have I regained control over my health, but I've also competed in 3 body building competitions! Chanda has been a God-sen helping me every step of the way.`,
+  levelUp
+);
+slideList.push(T3);
 
 export default class Carousel extends React.Component {
   public render() {
