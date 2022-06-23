@@ -15,7 +15,7 @@ export default function NavigationBar(props: IDesktopNavProps) {
           <h1 className="company-nav-header-name header">
             <Link href={"/Home"} passHref>
               {/* <span className="header">CMAFITNESS</span> */}
-              CMAFITNESS
+              CMA FITNESS
             </Link>
           </h1>
         </div>

@@ -17,7 +17,7 @@ export default function AboutLanding() {
       </Head>
       <section className="cma-landing-wrapper cma-about-landing">
         <h1 className="cma-about-landing-headline header">
-          Why <span className="header">CMA</span>Fitness?
+          Why <span className="header">CMA</span> Fitness?
         </h1>
         <h2 className="about-landing-tagline">
           We are a locally and minority-owned gym in Warner Robins, GA. We are

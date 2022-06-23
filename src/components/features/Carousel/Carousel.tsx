@@ -5,6 +5,8 @@ import Image from "next/image";
 import Debi from "../../../../public/imgs/Testimonials/Debi.png";
 import justinBefore from "../../../../public/imgs/Testimonials/justinBefore.png";
 import levelUp from "../../../../public/imgs/Testimonials/levelup.png";
+import sam1 from "../../../../public/imgs/Testimonials/sam1.png";
+import sam2 from "../../../../public/imgs/Testimonials/sam2.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -21,7 +23,7 @@ const slideList: Array<Testimonial> = [];
 const T1 = new Testimonial(
   `Over 15lbs down in 3 months and best of all - blood pressure no longer high!! 
 Nurse said my blood pressure is better than hers!! Sugar levels were back to normal! 
-So happy because I’ve been dealing with this my entire adult life!!`,
+So happy because I&rsquo;ve been dealing with this my entire adult life!!`,
   Debi
 );
 slideList.push(T1);
@@ -29,9 +31,9 @@ slideList.push(T1);
 const T2 = new Testimonial(
   `Coach Chanda changed my life. 
 Doctors told me it would be impossible to be where I am today and that I needed to be realistic in my overall goals. 
-Well, thanks to her I just competed in my 4th men’s physique competition and it’s only up from here. 
-She’s constantly teaching me how to improve as an athlete and in doing so has helped me improve in life. 
-Over 100 pounds of fat lost!!!! No surgery!!!! Just a great coach and some work. Love her to death and can’t wait to see what the future holds.`,
+Well, thanks to her I just competed in my 4th men&rsquo;s physique competition and it&rsquo;s only up from here. 
+She&rsquo;s constantly teaching me how to improve as an athlete and in doing so has helped me improve in life. 
+Over 100 pounds of fat lost!!!! No surgery!!!! Just a great coach and some work. Love her to death and can&rsquo;t wait to see what the future holds.`,
   justinBefore
 );
 slideList.push(T2);
@@ -44,6 +46,18 @@ have I regained control over my health, but I've also competed in 3 body buildin
   levelUp
 );
 slideList.push(T3);
+const T4 = new Testimonial(
+  `I am bikini doll Sam. A NPC bikini athlete that has recently started training for competition after turning forty. 
+  I&rsquo;ve been an athlete all my life playing sports, lifting weights, but never entering such an extreme sport like now. In 8 weeks I have lost 18 pounds from, 
+158 to 140 and lost 7% body fat from, 25% to 18%.`,
+  sam1
+);
+slideList.push(T4);
+const T5 = new Testimonial(
+  `Look for me show ready this fall and nationally qualified by 2023!!`,
+  sam2
+);
+slideList.push(T5);
 
 export default class Carousel extends React.Component {
   public render() {

@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="cma-footer-wrapper">
           <div className="cma-footer long-footer-box">
             <h1 className="footer-header">
-              <span className="header">CMAFITNESS</span>
+              <span className="header">CMA FITNESS</span>
             </h1>
             <h2 className="footer-tagline">
               We provide a new experience in fitness! Fall in love with the

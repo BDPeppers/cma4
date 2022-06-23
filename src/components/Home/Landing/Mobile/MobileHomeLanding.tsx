@@ -8,7 +8,7 @@ export default function MobileHomeLanding() {
   return (
     <section className="cma-landing-wrapper mobile-home-landing">
       <div className="cma-landing-home-img">
-        <Image src={cma} alt="CMAFitness - Warner Robins Gym near you" />
+        <Image src={cma} alt="CMA Fitness - Warner Robins Gym near you" />
       </div>
       <div className="cma-landing-home-mobile-buttons">
         <Button className="blk-bg">
