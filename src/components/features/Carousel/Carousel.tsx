@@ -47,7 +47,7 @@ have I regained control over my health, but I've also competed in 3 body buildin
 );
 slideList.push(T3);
 const T4 = new Testimonial(
-  `I am bikini doll Sam. A NPC bikini athlete that has recently started training for competition after turning forty. 
+  `I am bikini doll, Sam. A NPC bikini athlete that has recently started training for competition after turning forty. 
   I&rsquo;ve been an athlete all my life playing sports, lifting weights, but never entering such an extreme sport like now. In 8 weeks I have lost 18 pounds from, 
 158 to 140 and lost 7% body fat from, 25% to 18%.`,
   sam1
