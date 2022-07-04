@@ -7,15 +7,12 @@ export default function Banner() {
     <div className="cma-banner-wrapper blk-bg">
       <div className="cma-banner">
         <h2 className="cma-banner-txt-1">
-          {/* &quot;Accept the challenge, stay motivated, achieve, set goals and a
-          more healthier life overall.&quot; */}
-          We&apos;re going to turn it up this summer with a little pain and a
-          lotta gain!! Join us 6/6-6/30 and we&apos;ll help you get CMA fit!
+          &quot;Accept the challenge, stay motivated, achieve, set goals and a
+          more healthier life overall.&quot;
         </h2>
-        <br />
-        <br />
-        <br />
-        {/* <h2 className="cma-banner-txt-2">Summertime Boot Camp Sign Up</h2> */}
+
+        <h2 className="cma-banner-txt-2">- Chanda Akles</h2>
+        {/* 
         <Button className="yt-bg banner-btn">
           <Link
             href={
@@ -23,8 +20,8 @@ export default function Banner() {
             }
           >
             Summertime Boot Camp Sign Up
-          </Link>
-        </Button>
+          </Link> */}
+        {/* </Button> */}
       </div>
     </div>
   );
