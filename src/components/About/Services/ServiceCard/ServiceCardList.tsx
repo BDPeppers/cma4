@@ -7,7 +7,6 @@ import PersonalTrainingPic from "../../../../../public/imgs/PersonalTrainingPic.
 import BodyBuildingPic from "../../../../../public/imgs/BodyBuildingPic.png";
 import CMAKidzPic from "../../../../../public/imgs/CMAKidzCarePic.png";
 import FemaleFitnessPic from "../../../../../public/imgs/FemaleFitnessPic.png";
-
 import CoedGymPic from "../../../../../public/imgs/CoedGymPic.png";
 import AllTheTimePic from "../../../../../public/imgs/AllTheTimePic.png";
 import BestCustPic from "../../../../../public/imgs/BestCustPic.png";
